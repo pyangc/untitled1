@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="581214df-946e-49d0-885c-6bca47a5afc7" name="https://gitee.com/pyangc/python" url="https://gitee.com/pyangc/python">
+        <fileTransfer host="https://gitee.com/pyangc/python" port="21" rootFolder="https://gitee.com/pyangc/python/tree/master/training" accessType="FTPS">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

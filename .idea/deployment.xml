@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="https://gitee.com/pyangc/python" uploadOnCheckin="581214df-946e-49d0-885c-6bca47a5afc7">
+    <serverData>
+      <paths name="https://gitee.com/pyangc/python">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="https://gitee.com/pyangc/python" />
+  </component>
+</project>
