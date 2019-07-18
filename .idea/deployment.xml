@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="https://gitee.com/pyangc/python" uploadOnCheckin="581214df-946e-49d0-885c-6bca47a5afc7">
+  <component name="PublishConfigData" serverName="training" uploadOnCheckin="35a5700a-2705-4134-954f-a048de3eb314">
     <serverData>
-      <paths name="https://gitee.com/pyangc/python">
+      <paths name="training">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -10,6 +10,6 @@
         </serverdata>
       </paths>
     </serverData>
-    <option name="myUploadOnCheckinName" value="https://gitee.com/pyangc/python" />
+    <option name="myUploadOnCheckinName" value="training" />
   </component>
 </project>

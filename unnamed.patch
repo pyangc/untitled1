@@ -1,0 +1,566 @@
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1563261349505)
++++ .idea/vcs.xml	(date 1563261349505)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: 11111.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- 11111.py	(date 1563250683692)
++++ 11111.py	(date 1563250683692)
+@@ -0,0 +1,38 @@
++class Restaurant:
++    def __init__(self, name, cuisine):
++        self.name = name
++        self.cuisine = cuisine
++        self.number = 0
++
++    def describe_restaurant(self):
++        print(self.name)
++        print(self.cuisine)
++
++    def open_restaurant(self):
++        print(self.name + " In operation")
++
++    def people(self):
++        print(self.number)
++
++    def set_number_served(self):
++        while True:
++            print("Please enter the number of diners: ")
++            self.number = input()
++            if int(self.number) >= 1:
++                print("There's a table for " + self.number + " today.")
++                break
++            else:
++                print("Input Error")
++
++    def increment_number_served(self, more):
++        if more > 0:
++            s = int(self.number)
++            s += more
++            print(s)
++        else:
++            print("Input Error")
++
++
++data = Restaurant('柬埔寨', '汉菜')
++data.set_number_served()
++data.increment_number_served(more=1)
+\ No newline at end of file
+Index: .idea/deployment.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/deployment.xml	(date 1563265638925)
++++ .idea/deployment.xml	(date 1563265638925)
+@@ -0,0 +1,15 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="PublishConfigData" serverName="https://gitee.com/pyangc/python" uploadOnCheckin="581214df-946e-49d0-885c-6bca47a5afc7">
++    <serverData>
++      <paths name="https://gitee.com/pyangc/python">
++        <serverdata>
++          <mappings>
++            <mapping local="$PROJECT_DIR$" web="/" />
++          </mappings>
++        </serverdata>
++      </paths>
++    </serverData>
++    <option name="myUploadOnCheckinName" value="https://gitee.com/pyangc/python" />
++  </component>
++</project>
+\ No newline at end of file
+Index: jichu.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- jichu.py	(date 1563195145556)
++++ jichu.py	(date 1563195145556)
+@@ -0,0 +1,55 @@
++#\n换行命令
++"""string =  'C:\now'
++print(string) #反斜杠\和字符（n）转义构成换行符（\n）
++string = 'C:\\now'
++print(string) #反转义
++string = r'C:\now'
++print(string) #加字母r原始字符串；注：无论是否原始字符串，都不能以斜杠（\）作为结尾
++# （反斜杠放在字符串的末尾表示该字符串还没结束，换行继续的意思）
++print("I love python\n"*3)"""
++#赋值
++'''tescher = "pyang"
++print(tescher)
++x=3
++y=5
++z=x+y
++print(z)'''
++#分支和循环
++"""score = int(input('请输入你的期末分数:'))
++if 100>=score>=90:
++    print('优')
++elif 90>score>=80:
++    print('良')
++elif 80>score>=60:
++    print(('中'))
++elif 60>score>=0:
++    print('差')
++else:
++    print('输入错误!')"""
++#break语句
++'''bingo = '1'
++answer = input('请输入一个数字：')
++while True:
++    if answer == bingo:
++        break
++    answer = input('请重新输入：')
++print('Bingo!!!')'''
++#continue语句
++'''for i in range(10):
++    if i %2 !=0:
++        print(i)
++        continue
++        i += 2
++    print(i)'''
++
++
++
++
++
++
++
++
++
++
++
++
+Index: .idea/untitled1.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/untitled1.iml	(date 1559210356223)
++++ .idea/untitled1.iml	(date 1559210356223)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++  <component name="TestRunnerService">
++    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/webServers.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/webServers.xml	(date 1563264964576)
++++ .idea/webServers.xml	(date 1563264964576)
+@@ -0,0 +1,15 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="WebServers">
++    <option name="servers">
++      <webServer id="581214df-946e-49d0-885c-6bca47a5afc7" name="https://gitee.com/pyangc/python" url="https://gitee.com/pyangc/python">
++        <fileTransfer host="https://gitee.com/pyangc/python" port="21" rootFolder="https://gitee.com/pyangc/python/tree/master/training" accessType="FTPS">
++          <advancedOptions>
++            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
++          </advancedOptions>
++          <option name="port" value="21" />
++        </fileTransfer>
++      </webServer>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(date 1559210356607)
++++ .idea/misc.xml	(date 1559210356607)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="JavaScriptSettings">
++    <option name="languageLevel" value="ES6" />
++  </component>
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: training.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- training.py	(date 1563250887930)
++++ training.py	(date 1563250887930)
+@@ -0,0 +1,106 @@
++"""class Car:
++    def __init__(self, make, model, year):
++        self.make = make
++        self.model = model
++        self.year = year
++        self.odometer_reading = 0
++
++    def get_descriptive_name(self):
++        long_name = str(self.year) + ' ' + self.make + ' ' + self.model
++        return long_name.title()
++
++    def read_odometer(self):
++            print("This car has " + str(self.odometer_reading) + " miles on it.")
++
++    def update_odometer(self, mileage):
++        if mileage >= self.odometer_reading:
++            self.odometer_reading = mileage
++        else:
++            print("You can't roll back an odometer!")
++
++    def increment_odometer(self, miles):
++            self.odometer_reading += miles
++
++    def get_descriptive_name(self):
++        long_name = str(self.year) + ' ' + self.make + ' ' + self.model
++        return long_name.title()
++
++    def read_odometer(self):
++        print("This car has " + str(self.odometer_reading) + " miles on it.")
++
++    def update_odometer(self, mileage):
++        if mileage >= self.odometer_reading:
++            self.odometer_reading = mileage
++        else:
++            print("You can't roll back an odometer!")
++
++    def increment_odometer(self, miles):
++        self.odometer_reading += miles
++
++    def fill_gas_tank(self):
++        print(self.year)
++
++class Battery:
++    def __init__(self, battery_size=70):
++        self.battery_size = battery_size
++
++    def describe_battery(self):
++        print("This car has a " + str(self.battery_size) + "-kWh battery.")
++
++    def get_range(self):
++        if self.battery_size == 70:
++            range = 240
++        elif self.battery_size == 85:
++            range = 270
++        message = "This car can go approximately " + str(range)
++        message += " miles on a full charge."
++        print(message)
++
++    def upgrade_battery(self):
++        if self.battery_size != 85:
++            self.battery_size = 85
++
++class ElectricCar(Car):
++    def __init__(self, make, model, year):
++        super().__init__(make, model, year)
++        self.battery = Battery()"""
++# 9-4 就餐人数：在为完成练习 9-1 而编写的程序中，添加一个名为 number_served
++# 的属性，并将其默认值设置为 0。根据这个类创建一个名为 restaurant 的实例；打印有
++# 多少人在这家餐馆就餐过，然后修改这个值并再次打印它。
++# 添加一个名为 set_number_served()的方法，它让你能够设置就餐人数。调用这个
++# 方法并向它传递一个值，然后再次打印这个值。
++# 调用这个方法并向它传递一个这样的值：你认为这家餐馆每天可能接待的就餐人数。
++# 添加一个名为 increment_number_served()的方法，它让你能够将就餐人数递增。
++class Restaurant:
++    def __init__(self, restaurant_name, cuisine_type):
++        self.restaurant_name = restaurant_name
++        self.cuisine_type = cuisine_type
++        self.number_served = 0
++    def describe_restaurant(self):
++        print(self.restaurant_name)
++        print(self.cuisine_type)
++    def open_restaurant(self):
++        print(self.restaurant_name + " In operation")
++    def people(self):
++        print(self.number_served)
++    def set_number_served(self):
++        while True:
++            print("Please enter the number of diners: ")
++            self.number_served = input()
++            if int(self.number_served) >= 1:
++                print("There's a table for " + self.number_served + " today.")
++                break
++            else:
++                print("Input Error")
++    def increment_number_served(self, more):
++        if int(more) > 0:
++            s = int(self.number_served)
++            s += more
++            print(s)
++        else:
++            print("Input Error")
++
++data = Restaurant('1', '2',)
++data.number_served = 23
++data.set_number_served()
++data.increment_number_served(3)
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(date 1559210356775)
++++ .idea/modules.xml	(date 1559210356775)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/untitled1.iml" filepath="$PROJECT_DIR$/.idea/untitled1.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: test01.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- test01.py	(date 1563250640616)
++++ test01.py	(date 1563250640616)
+@@ -0,0 +1,64 @@
++# 9-4 就餐人数：在为完成练习 9-1 而编写的程序中，添加一个名为 number_served
++# 的属性，并将其默认值设置为 0。根据这个类创建一个名为 restaurant 的实例；打印有
++# 多少人在这家餐馆就餐过，然后修改这个值并再次打印它。
++# 添加一个名为 set_number_served()的方法，它让你能够设置就餐人数。调用这个
++# 方法并向它传递一个值，然后再次打印这个值。
++# 调用这个方法并向它传递一个这样的值：你认为这家餐馆每天可能接待的就餐人数。
++# 添加一个名为 increment_number_served()的方法，它让你能够将就餐人数递增。
++class Restaurant:
++    def __init__(self, restaurant_name, cuisine_type):
++        self.restaurant_name = restaurant_name
++        self.cuisine_type = cuisine_type
++        self.number_served = 0
++
++    def describe_restaurant(self):
++        print(self.restaurant_name)
++        print(self.cuisine_type)
++
++    def open_restaurant(self):
++        print(self.restaurant_name + " In operation")
++
++    def people(self):
++        print(str(self.number_served))
++
++    def set_number_served(self, virtual):
++        self.number_served = virtual
++
++    def increment_number_served(self, more):
++        if more > 0:
++            self.number_served += more
++            print(self.number_served)
++        else:
++            print("Input Error")
++
++data = Restaurant('柬埔寨', '汉菜',)
++data.number_served = 23
++data.set_number_served(2)
++data.increment_number_served(3)
++# 9-5 尝试登录次数：在为完成练习 9-3 而编写的 User 类中，添加一个名为
++# login_attempts 的属性。编写一个名为 increment_login_attempts()的方法，它将属性
++# login_attempts 的值加 1。再编写一个名为 reset_login_attempts()的方法，它将属性
++# login_attempts 的值重置为 0。
++"""class User:
++    def __init__(self, first_name, last_name, age):
++        self.first_name = first_name
++        self.last_name = last_name
++        self.age = age
++        self.login_attempts = 0
++
++    def describe_user(self):
++        print("User first_name: " + self.first_name)
++        print("User last_name: " + self.last_name)
++        print("User age: " + str(self.age))
++
++    def greet_user(self):
++        print("Hello,I'm " + self.first_name + " " + self.last_name)
++
++    def increment_login_attempts(self):
++        self.login_attempts += 1
++
++    def reset_login_attempts(self):
++        self.login_attempts = 0
++
++# 根据 User 类创建一个实例，再调用方法 increment_login_attempts()多次。打印属
++# 性 login_attempts 的值，确认它被正确地递增；然后，调用方法 reset_login_attempt"""
+\ No newline at end of file
+Index: shareWeather.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- shareWeather.py	(date 1561540647854)
++++ shareWeather.py	(date 1561540647854)
+@@ -0,0 +1,127 @@
++＃编码 = UTF8
++导入请求
++来自请求导入异常
++来自
++urllib.request
++import urlopen
++
++来自
++bs4
++进口
++BeautifulSoup
++来自
++urllib.parse
++导入
++urlencode
++来自线程导入计时器
++进口重新
++来自
++wxpy
++import *
++进口
++计划
++进口
++时间
++导入
++http
++导入
++json
++导入日期时间
++随机导入
++
++bot = Bot（cache_path = True，console_qr = 1）
++我 = bot.self
++bot.enable_puid（' wxpy_puid.pkl '）
++
++def api（
++
++
++    url）：
++header = {
++    '接受'： ' text / html，application / xhtml + xml，application / xml; q = 0.9，image / webp，* / *; q = 0.8 '，
++' Accept-Encoding '： ' gzip，deflate '，
++'接受 - 语言'： ' zh-CN，zh; q = 0.8 '，
++'连接'： '保持活力'，
++' User-Agent '： ' Mozilla / 5.0（Windows NT 6.3; WOW64）AppleWebKit / 537.36（KHTML，像Gecko）Chrome / 43.0.235 '
++}
++超时 = random.choice（范围（80，180））
++data = requests.get（url，headers = header，timeout = timeout）
++
++return data.json（）
++
++def sendweather（
++
++
++    city，xx）：
++URL = ' https://free-api.heweather.com/s6/weather/forecast?location= ' + 城市 + '＆键=和风键'
++PMurl = ' https://free-api.heweather.com/s6/air/now?parameters&location= ' + 城市 + '＆键=和风键'
++lifeurl = ' https://free-api.heweather.com/s6/weather/lifestyle?location= ' + 城市 + '＆键=和风键'
++
++temp = api（url）
++temp = temp[' HeWeather6 '][0]
++update = temp[' update ']
++now = temp[' daily_forecast '][0]
++nowTime = datetime.datetime.now（）。strftime（'％Y-％m- ％d％H：％M：％S '）
++
++pm = api（PMurl）
++pm = pm[' HeWeather6 '][0]
++airnow = pm[' air_now_city ']
++
++life = api（lifeurl）
++
++生命 = 生命[' HeWeather6 '][0]
++生活 = 生活['生活方式']
++result = xx + city + ' --- ' + ' \ n ' + ' \ n ' \
++         + '           今天天气：' + 现在[' cond_txt_d '] + '转' + 现在[' cond_txt_n '] + ' \ n ' \
++         + '           ：今天温度' + 现在[' tmp_min '] + ' °C〜' + 现在[' TMP_MAX '] + ' ℃的' + ' \ n ' \
++         + '           风向：' + 现在[' wind_dir '] + '  ' + 现在[' wind_sc '] + '级' + 现在[' wind_spd '] + '公里/小时' + ' \ n ' \
++         + '           相对湿度：' + now[' hum '] + '％' + ' \ n ' \
++         + '           降水量：' + 现在[' pcpn '] + ' ml ' + '，降水概率：' + now[' pop '] + '％' + ' \ n ' \
++         + '           能见度：' + 现在[' vis '] + '公里' + ' \ n ' \
++         + ' ------------------------------------------ ' + ' \ n ' \
++         + '今天空气质量：' + ' \ n ' \
++         + '           空气质量指数：' + airnow[' aqi '] + ' \ n ' \
++         + '           主要污染物：' + airnow[' main '] + ' \ n ' \
++         + '           空气质量：' + airnow[' qlty '] + ' \ n ' \
++         + '           二氧化氮指数：' + airnow[' no2 '] + ' \ n ' \
++         + '           二氧化硫指数：' + airnow[' so2 '] + ' \ n ' \
++         + '           一氧化碳指数：' + airnow[' co '] + ' \ n ' \
++         + '           pm10指数：' + airnow[' pm10 '] + ' \ n ' \
++         + '           pm25指数：' + airnow[' pm25 '] + ' \ n ' \
++         + '           臭氧指数：' + airnow[' o3 '] + ' \ n ' \
++         + ' ------------------------------------------ ' + ' \ n ' \
++         + ' 1，' + 生活[0][' txt '] + ' \ n \ n ' \
++         + ' 2，' + 生活[1][' txt '] + ' \ n \ n ' \
++         + ' 3，' + 生活[2][' txt '] + ' \ n \ n ' \
++         + ' 😄😊😉😍😘😚😜😝😳😁 ' + ' \ n \ n ' \
++ \
++    结果 = 结果 + '发送时间：' + nowTime + ' \ n '
++
++返回结果
++
++
++def auto_send（
++
++
++    msg）：
++weather = sendweather（'上海'，msg）
++谎言 = bot.friends（）。搜索（你
++'谎言'）[0]
++QL = bot.friends（）搜索（û
++'毛百万'）[0]
++XLJ = bot.friends（）搜索（û
++' 🌶 '）[0]
++Lie.send（天气）
++＃ ql.send（天气）
++# xlj.send（sendweather（'烟台'，msg））
++
++
++schedule.every（）。day.at（“ 13: 56 ”）.do（auto_send，'早上好，'）
++schedule.every（）。day.at（“ 13: 57 ”）.do（auto_send，'晚上好，'）
++
++
++
++而
++真：
++schedule.run_pending（）
++time.sleep（1）
+\ No newline at end of file
+Index: array.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- array.py	(date 1563193588223)
++++ array.py	(date 1563193588223)
+@@ -0,0 +1,8 @@
++# 列表
++'''number = [1,2,3,4,5]          #创建列表
++number.append(6)                    #向列表中添加元素
++number.extend((7,8))                    #extend（参数）方法使用一个列表来扩展另一个列表
++number.insert(0,0)                          #让数字0出现在列表的最前边，(第一个0表示index=1)
++ print(number)'''
++name = ["鸡蛋","鸭蛋","鹅蛋","滚蛋"]
++name(name)
