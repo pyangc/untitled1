@@ -1,4 +1,4 @@
-"""class Car:
+class Car:
     def __init__(self, make, model, year):
         self.make = make
         self.model = model
@@ -63,7 +63,7 @@ class Battery:
 class ElectricCar(Car):
     def __init__(self, make, model, year):
         super().__init__(make, model, year)
-        self.battery = Battery()"""
+        self.battery = Battery()
 # 9-4 就餐人数：在为完成练习 9-1 而编写的程序中，添加一个名为 number_served
 # 的属性，并将其默认值设置为 0。根据这个类创建一个名为 restaurant 的实例；打印有
 # 多少人在这家餐馆就餐过，然后修改这个值并再次打印它。
